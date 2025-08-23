@@ -16,6 +16,8 @@ jobs:
           fetch-depth: 0
 
       - name: Smart upstream sync
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
           
